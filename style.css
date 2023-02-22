@@ -131,11 +131,7 @@ h1 {
     border-left: 1px solid white;
     height: 200px;
     padding-left: 10px;
-    margin-left: 10px;
-}
-
-.contact-right b {
-    transform: scaleX(2);
+    margin-left: 40px;
 }
 
 h2 {
@@ -347,7 +343,7 @@ footer p:first-child {
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     ul {
         flex-direction: column;
         align-items: center;
