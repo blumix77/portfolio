@@ -56,14 +56,31 @@ li {
     padding-bottom: 100;
 }
 
-li:hover {    
+li:nth-child(2):hover {    
     font-weight: 800;
-    transition: width 2s ease-in;
+    transition: width 0.8s ease-in;
     background: black;
     width: 180px;
     letter-spacing: 20px;
     padding-top: 5px;
-    z-index: 1;
+}
+
+li:last-child:hover {    
+    font-weight: 800;
+    transition: width 0.8s ease-in;
+    background: black;
+    width: 210px;
+    letter-spacing: 20px;
+    padding-top: 5px;
+}
+
+li:first-child:hover {    
+    font-weight: 800;
+    transition: width 0.8s ease-in;
+    background: black;
+    width: 150px;
+    letter-spacing: 20px;
+    padding-top: 5px;
 }
 
 h1 {
@@ -94,7 +111,7 @@ h1 {
 
 .box-2 {
     grid-area: box-2;
-    padding: 40px;
+    padding: 0 10rem 6rem 10rem;
     position: relative;
   /*   display: flex;
     flex-direction: column;
@@ -105,20 +122,45 @@ h1 {
     background-position: center;
     background-size: cover;
     color: rgba(240, 235, 235, 0.864);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:baseline;
+}
+
+.contact-right {
+    border-left: 1px solid white;
+    height: 200px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.contact-right b {
+    transform: scaleX(2);
 }
 
 h2 {
+    position: relative;
+    right: 50px;
     font-size: 2rem;
     color: rgba(240, 235, 235, 0.864);
     letter-spacing: 15px;
 }
+
+.box-1 h2 {
+    font-size: 2rem;
+    color: rgba(240, 235, 235, 0.864);
+    letter-spacing: 15px;
+    margin-left: 80px;
+}
+
+
 
 .box-2:hover, .box-1:hover , header:hover {
     opacity: 0.9;
 } 
 
 #text:focus {
-    transition: all 1.2s linear;
+    transition: all 0.5s linear;
     background: rgba(161, 107, 107, 0.5);
     font-size: 1.2rem;
     font-weight: 800;
@@ -126,7 +168,7 @@ h2 {
 }
 
 #name:focus {
-    transition: all 1.2s linear 0.6s;
+    transition: all 0.5s linear;
     background: rgba(161, 107, 107, 0.5);
     font-size: 1.2rem;
     font-weight: 800;
@@ -134,7 +176,7 @@ h2 {
 }
 
 #mail:focus {
-    transition: all 1.2s linear;
+    transition: all 0.5s linear;
     background: rgba(161, 107, 107, 0.5);
     font-size: 1.2rem;
     font-weight: 800;
@@ -157,7 +199,7 @@ h2 {
 .text {
     position: relative;
     top: 30px;
-    right: 34px; 
+    left: 62px; 
 }
 
 .submit {
@@ -370,7 +412,21 @@ footer p:first-child {
     h1 {
         font-size: 2rem;
     }
-    .hidden {
+
+    h2 {
+        padding-top: 50px;
+        font-size: 2rem;
+        color: rgba(240, 235, 235, 0.864);
+        letter-spacing: 15px;
+    }
+
+    .box-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .box-3:hover .hidden {
         display: flex;
         flex-direction: column;
         z-index: 1;
