@@ -127,6 +127,18 @@ h1 {
     align-items:baseline;
 }
 
+.box-2:hover span {
+    transition: transform 1s ease-in-out;
+}
+
+.box-2:hover span{
+    display: block;
+    transform: rotate(360deg);
+    font-size: 3rem;
+    color: greenyellow;
+    
+}
+
 .contact-right {
     border-left: 1px solid white;
     height: 200px;
@@ -140,6 +152,11 @@ h2 {
     font-size: 2rem;
     color: rgba(240, 235, 235, 0.864);
     letter-spacing: 15px;
+}
+
+h2:hover {
+    transition:width 1s ease-in;
+    /* transform: scale(2); */
 }
 
 .box-1 h2 {
@@ -226,6 +243,7 @@ h2 {
     background: url(./images/proberaum.jpg);
     background-size: cover;  
     background-position: left center; 
+    z-index: 0;
 }
 
 .box-3 p {
@@ -240,10 +258,6 @@ h2 {
     background: white;
     text-align: start;
     padding-left: 100px;
-}
-
-.box-3:hover {
-    opacity: 0.9;
 }
 
 .hidden {
@@ -271,10 +285,7 @@ h2 {
     
 .box-3:hover .hidden {
     display: block;
-    transition-property: width;
-    transition-duration: 4s;
-    transition-timing-function: ease-in;
-    transition-delay: 0.5s;
+    background-color: black;
     width: 700px;
     height: 250px;
     z-index: 3;
@@ -343,7 +354,10 @@ footer p:first-child {
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575px) {
+    main {
+        margin: 10px;
+    }
     ul {
         flex-direction: column;
         align-items: center;
@@ -353,7 +367,7 @@ footer p:first-child {
     .container {
                 display: grid;
                             
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 1fr 1fr 1fr; 
                                  
                 grid-template-rows: auto 
                                     1fr
@@ -376,21 +390,16 @@ footer p:first-child {
                                     "box-4  box-4" */
                                     "footer footer";
                                 }
-                                .box-1 iframe {
-                                    width: 320px;
-                                    height: 300px;
-                                    padding-top: 5rem;
-                                }
-                                h1 {
-                                    text-align: center;
-                                }
-                                h2 {
-                                    text-align: center;
-                                }
+                          
+                          
     .box-1 iframe {
         width: 320px;
         height: 300px;
         padding-top: 5rem;
+    }
+
+    .box {
+        width: 450px;
     }
 
     .box-1 {
@@ -406,12 +415,12 @@ footer p:first-child {
         text-align: center;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     h2 {
         padding-top: 50px;
-        font-size: 2rem;
+        font-size: 1rem;
         color: rgba(240, 235, 235, 0.864);
         letter-spacing: 15px;
     }
@@ -419,19 +428,16 @@ footer p:first-child {
     .box-2 {
         display: flex;
         flex-direction: column;
+
     }
-
-
+    
+    
     .box-3:hover .hidden {
         display: flex;
         flex-direction: column;
         z-index: 1;
     }
-    .hidden img {
-        position: relative;
-        left: 0;
-        bottom: 0;
-    }
+    
 }
 
 
