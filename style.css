@@ -264,8 +264,6 @@ h2:hover {
     display: none;
     background-color: black;
     color: black;
-/*     width: 1050px;
-    height: 200px; */
     position: absolute;
     left: 700px;
     bottom: 200px;
@@ -356,7 +354,7 @@ footer p:first-child {
 
 @media (max-width: 575px) {
     main {
-        margin: 10px;
+        margin: 30px;
     }
     ul {
         flex-direction: column;
@@ -395,7 +393,7 @@ footer p:first-child {
     .box-1 iframe {
         width: 320px;
         height: 300px;
-        padding-top: 5rem;
+        
     }
 
     .box {
@@ -408,6 +406,40 @@ footer p:first-child {
         flex-wrap: wrap;
         align-items:center;
     }
+    .box-2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        overflow-x: hidden; 
+        padding-top: 40px;
+        padding-bottom:40px;
+    } 
+
+
+    .contact-right {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    #mail {
+        position: relative;
+        right: 20px;
+    }
+
+    #text {
+        position: relative;
+        right: 65px;
+    }
+
+    .submit {
+        position: relative; 
+        top: 50px;
+        left: 70px;
+    }
+
     header {
         height: 282px;
     }
@@ -420,6 +452,7 @@ footer p:first-child {
 
     h2 {
         padding-top: 50px;
+        padding-bottom: 20px;
         font-size: 1rem;
         color: rgba(240, 235, 235, 0.864);
         letter-spacing: 15px;
@@ -430,12 +463,20 @@ footer p:first-child {
         flex-direction: column;
 
     }
-    
-    
+
+    .hidden img:last-child {
+        position: absolute;
+        top: 180px;
+        left: 0;
+    }
+   
     .box-3:hover .hidden {
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
+        position: relative;
+        top: 0px;
+        left: 60px;
+        width: 320px;
+        height: 380px;
+      
     }
     
 }
